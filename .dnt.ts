@@ -8,7 +8,7 @@ await invokeDenoNodeJSTransformer({
 		"LICENSE.md",
 		"README.md"
 	],
-	entrypoints: configJSR.exports,
+	entrypoints: configJSR.getExports(),
 	generateDeclarationMap: true,
 	mappings: {
 		"https://raw.githubusercontent.com/hugoalh-studio/is-object-plain-es/v1.0.3/mod.ts": {
@@ -17,8 +17,8 @@ await invokeDenoNodeJSTransformer({
 		}
 	},
 	metadata: {
-		name: "@hugoalh/is-empty",
-		version: configJSR.version,
+		name: configJSR.getName(),
+		version: configJSR.getVersion(),
 		description: "A module to determine whether the item is empty.",
 		keywords: [
 			"empty",
