@@ -1,4 +1,4 @@
-import { isObjectPlain } from "https://raw.githubusercontent.com/hugoalh-studio/is-object-plain-es/v1.0.3/mod.ts";
+import { isObjectPlain } from "jsr:@hugoalh/is-object-plain@^1.0.4";
 /**
  * Determine whether the item is empty.
  * 
