@@ -11,7 +11,7 @@ await invokeDenoNodeJSTransformer({
 	entrypoints: configJSR.getExports(),
 	generateDeclarationMap: true,
 	mappings: {
-		"jsr:@hugoalh/is-object-plain@^1.0.4": {
+		"https://raw.githubusercontent.com/hugoalh-studio/is-object-plain-es/v1.0.4/mod.ts": {
 			name: "@hugoalh/is-object-plain",
 			version: "^1.0.4"
 		}
