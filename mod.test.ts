@@ -1,14 +1,14 @@
 import { assertEquals } from "STD/assert/equals";
 import { isEmpty } from "./mod.ts";
-Deno.test("False 1", { permissions: "none" }, () => {
+Deno.test("1", { permissions: "none" }, () => {
 	assertEquals(isEmpty(true), false);
 });
-Deno.test("False 2", { permissions: "none" }, () => {
+Deno.test("2", { permissions: "none" }, () => {
 	assertEquals(isEmpty([{}]), false);
 });
-Deno.test("True 1", { permissions: "none" }, () => {
+Deno.test("3", { permissions: "none" }, () => {
 	assertEquals(isEmpty([]), true);
 });
-Deno.test("True 2", { permissions: "none" }, () => {
+Deno.test("4", { permissions: "none" }, () => {
 	assertEquals(isEmpty({}), true);
 });
